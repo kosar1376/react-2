@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import react from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Pagination, PaginationItem, PaginationLink } from "reactstrap";
+import Navbar1 from "./Nav";
+import Table1 from "./Table";
+import Form1 from "./Form";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+function Example(){
+  return(
+    <>
+     <Navbar1/>
+     <Table1/>
+     <Form1/>
+     <ul class="pagination pagination-lg ul1">
+       <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+       <li class="page-item"><a class="page-link" href="#">1</a></li>
+       <li class="page-item"><a class="page-link" href="#">2</a></li>
+       <li class="page-item"><a class="page-link" href="#">3</a></li>
+       <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
 
-export default App;
+
+</>
+  )
+};
+
+export default Example;
+
+
+
+
